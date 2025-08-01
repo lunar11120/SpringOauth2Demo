@@ -14,6 +14,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
     
+    
+    @GetMapping("/")
+    public String firstPage(){
+        return "Welcome to Page 1 : firstPage controller RUN";
+    }    
+    
     @GetMapping("/hello")
     public String sayHello(){
         return "Welcome to myWeb : hello from controller";
